@@ -7,7 +7,7 @@ import ustruct
 import machine
 print('line 8')
 adc = machine.ADC()
-apin = adc.channel(pin='G5')
+apin = adc.channel(pin='G10')
 
 def getTemp():
     millivolts = apin.voltage()
