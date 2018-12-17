@@ -7,11 +7,11 @@ import ustruct
 import machine
 print('line 8')
 adc = machine.ADC()
-apin = adc.channel(pin='G10')
+apin = adc.channel(pin='G5')
 
 def getTemp():
     millivolts = apin.voltage()
-    degC = (millivolts - 500.0) / 10.0 + 4
+    degC = (millivolts - 500.0) / 10.0
     return degC
 
 def averageTemp():
